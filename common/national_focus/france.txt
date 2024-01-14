@@ -1,0 +1,2206 @@
+﻿focus_tree = {
+	id = french_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FRA
+
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+
+	focus = {
+		id = state_of_french_politics
+		icon = GFX_goal_french_political_status
+		x = 25
+		y = 0
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		#prerequisite = {}
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = a_setting_sun_over_the_republic
+		icon = GFX_goal_setting_sun_republic
+		x = -3
+		y = 1
+		relative_position_id = state_of_french_politics
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = state_of_french_politics }
+		mutually_exclusive = { focus = sunrise_over_the_country }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = sunrise_over_the_country
+		icon = GFX_goal_sunrise_over_country
+		x = 3
+		y = 1
+		relative_position_id = state_of_french_politics
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = state_of_french_politics }
+		mutually_exclusive = { focus = a_setting_sun_over_the_republic }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = action_francaise_coup
+		icon = GFX_goal_action_francaise_coup
+		x = 0
+		y = 2
+		relative_position_id = state_of_french_politics
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = sunrise_over_the_country focus = a_setting_sun_over_the_republic }
+		mutually_exclusive = { focus = doriot_takes_over }
+		mutually_exclusive = { focus = the_croix_de_feu_revolt }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+# DORIOT FOCUS TREE
+	focus = {
+		id = doriot_takes_over
+		icon = GFX_goal_doriot_takes_lead
+		x = -9
+		y = 2
+		relative_position_id = state_of_french_politics
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = a_setting_sun_over_the_republic }
+		mutually_exclusive = { focus = action_francaise_coup }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = reactivate_french_legion
+		icon = GFX_goal_french_legion
+		x = -2
+		y = 1
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = doriot_takes_over }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = the_new_french_man
+		icon = GFX_goal_new_french_man
+		x = 2
+		y = 1
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = doriot_takes_over }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = the_national_revolution
+		icon = GFX_goal_national_revolution
+		x = 0
+		y = 1
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = reactivate_french_legion }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = deal_with_the_ligues
+		icon = GFX_goal_deal_with_leagues
+		x = 0
+		y = 2
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = the_new_french_man }
+		prerequisite = { focus = reactivate_french_legion }
+		prerequisite = { focus = the_national_revolution }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = please_follow_us_monsieur_maurras
+		icon = GFX_goal_please_follow_us_monsieur_maurras
+		x = -3
+		y = 3
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = deal_with_the_ligues }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = -100
+			add_stability = -0.125
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = de_la_rocque_disappearance
+		icon = GFX_goal_de_la_rocque_disappearance
+		x = -0
+		y = 3
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = deal_with_the_ligues }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = -100
+			add_stability = -0.1
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = supress_deloncle
+		icon = GFX_goal_supress_deloncle
+		x = 3
+		y = 3
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = deal_with_the_ligues }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = -100
+			add_stability = -0.125
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = leagues_purged
+		icon = GFX_goal_leagues_purged
+		x = 0
+		y = 4
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = please_follow_us_monsieur_maurras }
+		prerequisite = { focus = supress_deloncle }
+		prerequisite = { focus = de_la_rocque_disappearance }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.35
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = destroy_remnants_of_republicanism
+		icon = GFX_goal_destroy_republicanism
+		x = -2
+		y = 5
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = leagues_purged }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = -250
+			add_manpower = -15000
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = stabilize_the_nation
+		icon = GFX_goal_stabilize_the_nation
+		x = 2
+		y = 5
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = leagues_purged }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = restore_french_dominance_over_england
+		icon = GFX_goal_restore_french_dominance
+		x = 2
+		y = 6
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = stabilize_the_nation }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = charlemagne_operation
+		icon = GFX_goal_charlemagne_operation
+		x = 3
+		y = 7
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+			NOT = {
+				has_stability < 0.6
+				has_war_support < 0.7
+			}
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = restore_french_dominance_over_england }
+		mutually_exclusive = { }
+
+		cancelable = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			declare_war_on = { target = ENG type = puppet_wargoal_focus }
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = celebrate_french_heroes
+		icon = GFX_goal_celebrate_french_heroes
+		x = -2
+		y = 6
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = destroy_remnants_of_republicanism }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = die_perfidious_albion
+		icon = GFX_goal_die_perfidious_albion
+		x = 3
+		y = 8
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = charlemagne_operation }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = crush_english_resistance
+		icon = GFX_goal_crush_english_resistance
+		x = 2
+		y = 9
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = die_perfidious_albion }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = restore_cornwall_duchy
+		icon = GFX_goal_restore_cornwall_duchy
+		x = 4
+		y = 9
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = die_perfidious_albion }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = create_spheres_influence
+		icon = GFX_goal_spheres_influence
+		x = 2
+		y = 11
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = crush_english_resistance }
+		prerequisite = { focus = restore_cornwall_duchy }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = great_national_appeasement
+		icon = GFX_goal_great_national_appeasement
+		x = -3
+		y = 7
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = celebrate_french_heroes }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = german_concessions_africa
+		icon = GFX_goal_german_concessions_africa
+		x = -4
+		y = 8
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = great_national_appeasement }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = italy_concessions_africa
+		icon = GFX_goal_italian_concessions_africa
+		x = -2
+		y = 8
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = great_national_appeasement }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = declare_great_fraternity
+		icon = GFX_goal_great_fraternity
+		x = -3
+		y = 9
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = german_concessions_africa }
+		prerequisite = { focus = italy_concessions_africa }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = french_excuse_rhineland
+		icon = GFX_goal_excuse_rhineland
+		x = -2
+		y = 10
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = declare_great_fraternity }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = surrender_alsace_lorraine
+		icon = GFX_goal_surrender_alsace
+		x = 0
+		y = 11
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = french_excuse_rhineland }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = join_axis_doriot
+		icon = GFX_goal_join_axis
+		x = 2
+		y = 12
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = surrender_alsace_lorraine }
+		prerequisite = { focus = create_spheres_influence }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = create_neue_continental_system
+		icon = GFX_reinstate_neue_continental_system
+		x = 2
+		y = 13
+		relative_position_id = doriot_takes_over
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = join_axis_doriot }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = break_american_influence
+		icon = GFX_break_american_influence
+		x = 2
+		y = 14
+		relative_position_id = doriot_takes_over
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = create_neue_continental_system }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = nullify_french_debt
+		icon = GFX_nullify_french_debt
+		x = 1
+		y = 15
+		relative_position_id = doriot_takes_over
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = break_american_influence }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = claim_the_new_french_space
+		icon = GFX_claim_the_new_french_space
+		x = 3
+		y = 15
+		relative_position_id = doriot_takes_over
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = break_american_influence }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+# ACTION FRANCAISE TREE
+# DE LA ROCQUE TREE (REPUBLICANISM)
+	focus = {
+		id = the_croix_de_feu_revolt
+		icon = GFX_croix_de_feu_uprising
+		x = 9
+		y = 2
+		relative_position_id = state_of_french_politics
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = sunrise_over_the_country }
+		mutually_exclusive = { focus = action_francaise_coup }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = disengage_french_foreign_politics
+		icon = GFX_disengage_politics
+		x = -2
+		y = 1
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = the_croix_de_feu_revolt }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}	
+	focus = {
+		id = bring_back_merit_system
+		icon = GFX_bring_back_merit_system
+		x = 2
+		y = 1
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = the_croix_de_feu_revolt }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = bring_nazi_to_heaven
+		icon = GFX_bring_nazis_to_heaven
+		x = -2
+		y = 2
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = disengage_french_foreign_politics }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = public_accusation_of_nazism
+		icon = GFX_public_accusation_of_extremists
+		x = -2
+		y = 3
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = bring_nazi_to_heaven }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = time_is_running_out
+		icon = GFX_time_running_out
+		x = 2
+		y = 2
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = bring_back_merit_system }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = social_reformism
+		icon = GFX_social_reforms
+		x = 2
+		y = 3
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = time_is_running_out }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = take_care_of_extremists
+		icon = GFX_take_care_european_extremists
+		x = 0
+		y = 4
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = public_accusation_of_nazism }
+		prerequisite = { focus = social_reformism }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = prepare_french_mind
+		icon = GFX_prepare_french_mind
+		x = 1
+		y = 5
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = take_care_of_extremists }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = expand_security_forces
+		icon = GFX_expand_the_carlingue
+		x = -1
+		y = 5
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = take_care_of_extremists }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = sarre_breaching_initiative
+		icon = GFX_sarre_breaching
+		x = 2
+		y = 6
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = prepare_french_mind }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = safeguard_press_liberty
+		icon = GFX_safeguard_press_liberty
+		x = -2
+		y = 6
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = expand_security_forces }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = the_german_ultimatum
+		icon = GFX_german_ultimatum
+		x = 0
+		y = 6
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = expand_security_forces }
+		prerequisite = { focus = prepare_french_mind }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = kill_prussian_eagle
+		icon = GFX_kill_germany
+		x = 0
+		y = 7
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = safeguard_press_liberty }
+		prerequisite = { focus = sarre_breaching_initiative }
+		prerequisite = { focus = the_german_ultimatum }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = totalitarian_domino
+		icon = GFX_totalitarian_domino
+		x = -1
+		y = 8
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = kill_prussian_eagle }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = la_der_des_der
+		icon = GFX_der_des_der
+		x = 1
+		y = 8
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = kill_prussian_eagle }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = the_german_minority
+		icon = GFX_german_minority
+		x = 2
+		y = 9
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = la_der_des_der }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = destroy_nazi_remnants
+		icon = GFX_destroy_nazi_remnants
+		x = -2
+		y = 9
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = totalitarian_domino }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = what_now
+		icon = GFX_what_now
+		x = 0
+		y = 10
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = destroy_nazi_remnants }
+		prerequisite = {
+			focus = the_german_minority
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = continue_the_european_domino
+		icon = GFX_european_domino
+		x = 3
+		y = 11
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		mutually_exclusive = {
+			focus = madelon_victoire
+		}
+		
+		cost = 3
+		prerequisite = { focus = what_now }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = madelon_victoire
+		icon = GFX_madelon_victoire
+		x = -3
+		y = 11
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		mutually_exclusive = {
+			focus = continue_the_european_domino
+		}
+		
+		cost = 3
+		prerequisite = { focus = what_now }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+# PATH MADELON DE LA VICTOIRE
+	focus = {
+		id = create_assemblee_delegues_nation
+		icon = GFX_assemblee_nation
+		x = -3
+		y = 12
+		relative_position_id = the_croix_de_feu_revolt
+	
+		available = {	
+		}
+		bypass = {
+		}
+	
+		cost = 3
+		prerequisite = { focus = madelon_victoire }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = bring_back_democracy
+		icon = GFX_restore_democracy
+		x = -2
+		y = 13
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = create_assemblee_delegues_nation }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = proclaim_new_republic
+		icon = GFX_GFX_proclaim_new_republic
+		x = -1
+		y = 15
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = bring_back_democracy }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+# PATH CONTINUE THE EUROPEAN DOMINO
+	focus = {
+		id = finish_the_work
+		icon = GFX_finish_the_work
+		x = 3
+		y = 12
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = continue_the_european_domino }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = napoleon_legacy
+		icon = GFX_napoleon_legacy
+		x = 2
+		y = 13
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = finish_the_work }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = de_la_rocque_leads
+		icon = GFX_la_rocque_leads
+		x = 1
+		y = 15
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = napoleon_legacy }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = french_paradise
+		icon = GFX_french_paradise
+		x = 0
+		y = 16
+		relative_position_id = the_croix_de_feu_revolt
+		
+		available = {	
+		}
+		bypass = {
+		}
+		
+		cost = 3
+		prerequisite = { focus = proclaim_new_republic focus = de_la_rocque_leads }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	# FOREIGN POLITICS SUB-TREE
+	focus = {
+		id = golden_age_french_mercenaries
+		icon = GFX_golden_mercenaries
+		x = 5
+		y = 20
+		relative_position_id = state_of_french_politics
+		
+		available = {	
+			has_completed_focus = french_paradise
+		}
+		bypass = {
+		}
+		mutually_exclusive = {
+			focus = french_manifest_destiny
+		}
+		
+		cost = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = french_manifest_destiny
+		icon = GFX_french_manifest_destiny
+		x = 15
+		y = 20
+		relative_position_id = state_of_french_politics
+		
+		available = {	
+			has_completed_focus = claim_the_new_french_space
+		}
+		bypass = {
+		}
+		mutually_exclusive = {
+			focus = golden_age_french_mercenaries
+		}
+		
+		cost = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+# COLONIAL SYSTEM
+	focus = {
+		id = the_colonial_question
+		icon = GFX_the_colonial_question
+		x = 10
+		y = 22
+		relative_position_id = state_of_french_politics
+
+		available = {
+		}
+		bypass = {
+		}
+
+		prerequisite = {
+			focus = golden_age_french_mercenaries focus = french_manifest_destiny
+		}
+
+		cost = 3
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}	
+	focus = {
+		id = the_african_initiative
+		icon = GFX_the_colonial_question
+		x = 0
+		y = 1
+		relative_position_id = the_colonial_question
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = the_colonial_question }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = claim_francosphere
+		icon = GFX_claim_francosphere
+		x = 3
+		y = -1
+		relative_position_id = the_colonial_question
+	
+		available = {
+		}
+		bypass = {
+		}
+	
+		cost = 3
+		prerequisite = { focus = french_manifest_destiny }
+		mutually_exclusive = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = subsidize_deuxieme_bureau
+		icon = GFX
+		x = -3
+		y = -1
+		relative_position_id = the_colonial_question
+	
+		available = {
+		}
+		bypass = {
+		}
+	
+		cost = 3
+		prerequisite = { focus = golden_age_french_mercenaries }
+		mutually_exclusive = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = red_turning_jewel_empire
+		icon = GFX
+		x = 0
+		y = 2
+		relative_position_id = the_colonial_question
+	
+		available = {
+		}
+		bypass = {
+		}
+	
+		cost = 3
+		prerequisite = { focus = the_african_initiative }
+		mutually_exclusive = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = lafayette_avengers
+		icon = GFX
+		x = 2
+		y = 2
+		relative_position_id = the_colonial_question
+	
+		available = {
+		}
+		bypass = {
+		}
+	
+		cost = 3
+		prerequisite = { focus = the_african_initiative }
+		prerequisite = {
+			focus = claim_francosphere
+		}
+		mutually_exclusive = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = vive_french_quebec
+		icon = GFX
+		x = -2
+		y = 2
+		relative_position_id = the_colonial_question
+	
+		available = {
+		}
+		bypass = {
+		}
+	
+		cost = 3
+		prerequisite = { focus = the_african_initiative }
+		prerequisite = {
+			focus = subsidize_deuxieme_bureau
+		}
+		mutually_exclusive = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = the_choice
+		icon = GFX
+		x = 0
+		y = 3
+		relative_position_id = the_colonial_question
+	
+		available = {
+		}
+		bypass = {
+		}
+	
+		cost = 3
+		prerequisite = { focus = red_turning_jewel_empire }
+		mutually_exclusive = { }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = sombre_armee
+		icon = GFX
+		x = 2
+		y = 4
+		relative_position_id = the_colonial_question
+	
+		available = {
+			has_completed_focus = a_setting_sun_over_the_republic
+		}
+		bypass = {
+		}
+	
+		cost = 3
+		prerequisite = { focus = the_choice }
+		mutually_exclusive = { focus = indochinese_integration_assembly }
+		mutually_exclusive = {
+			focus = create_indochinese_union
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = create_indochinese_union
+		icon = GFX
+		x = 0
+		y = 4
+		relative_position_id = the_colonial_question
+	
+		available = {
+		}
+		bypass = {
+		}
+	
+		cost = 3
+		prerequisite = { focus = the_choice }
+		mutually_exclusive = { focus = sombre_armee }
+		mutually_exclusive = {
+			focus = indochinese_integration_assembly
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = indochinese_integration_assembly
+		icon = GFX
+		x = -2
+		y = 4
+		relative_position_id = the_colonial_question
+	
+		available = {
+			has_completed_focus = sunrise_over_the_country
+		}
+		bypass = {
+		}
+	
+		cost = 3
+		prerequisite = { focus = the_choice }
+		mutually_exclusive = {
+			focus = create_indochinese_union
+		}
+		mutually_exclusive = {
+			focus = sombre_armee
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = proclaim_french_american_territories
+		icon = GFX
+		x = 3
+		y = 3
+		relative_position_id = the_colonial_question
+	
+		available = {
+		}
+		bypass = {
+		}
+	
+		cost = 3
+		prerequisite = { focus = lafayette_avengers }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+
+# COMMUNIST REVOLT TREE
+	focus = {
+		id = the_disaster
+		icon = GFX_disaster
+		x = 55
+		y = 0
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = the_disaster_no_more
+		icon = GFX
+		x = 55
+		y = 1
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+		}
+	}
+}

@@ -1,0 +1,29 @@
+ideas = {
+
+	country = {
+
+		fallen_democracy = {
+			picture = generic_production_bonus
+			
+			allowed = { 
+				tag = FRA
+			}
+
+			available = { 
+			}
+
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.25
+			}
+		}
+	}
+}
