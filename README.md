@@ -12,6 +12,6 @@ In this alternate reality, the course of a weakened France's destiny rests in yo
 
 # Status of the mod
 
-*Due to new updates for Hearts of Iron IV, the mod will be restarted from scratch. This repo is only here to assess the archives needed for the new project. The new project *with a new name, with major changes* will soon be available to test. 
+*Due to new updates for Hearts of Iron IV, the mod will be restarted from scratch. This repo is only here to assess the archives needed for the new project. The new project *with a new name, with major changes* will soon be available to test.*
 
 ## The Updates are only displayed here. Other sources are either fake, nor official.
