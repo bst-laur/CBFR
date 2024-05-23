@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-23T21:50:52.356Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="74pDMcyj3gYLKvbd5ozL" version="24.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-23T21:52:26.745Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="zwi_mwF1R4BQMcrvvRzu" version="24.4.7" type="github">
   <diagram name="Page 1" id="5bk7Gb2YT2sqerDLHxE1">
-    <mxGraphModel dx="1473" dy="1526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1358" dy="1463" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1316,9 +1316,6 @@
         </UserObject>
         <mxCell id="3O5G4UpEknz7UX0saP84-2" value="Focus GFX Félix" style="vsdxID=38;shape=stencil(lZNNboMwEIVP461lz0ANyypJL9AToOAEqwQih7Shpw9hjPwTqqis7DfvyZ+HMcPNpanOmoG4DLb/0j+mHhqGWwZgukZbM0wrhjuGm0Nv9dH2166m/bmanCBmRdeUkQ83iMruP82vJk1wlCqnAiVP/ffjxBvVleRFQeXRJebdB5n3V0tuScVC8Sxzdhn6xQ0chHDC6AQAjij8J9EFMA04ISt5WXoI8b7C4UNOUIq/qZgkZE3hlsPD6yc8/vDWdEHHoODLFcaVxAor8Dwvwy9G91AQdXSBDq+GseMfHUv69edfgRfQMeMCFDYFn+ZopYsv5m5azBNOs2/alh5IWE9fxCTRa8LdHQ==);spacingTop=-3;spacingBottom=-3;spacingLeft=-3;spacingRight=-3;points=[[0,0.5,0],[1,0.5,0],[0.5,1,0],[0.5,0,0]];labelBackgroundColor=none;rounded=1;html=1;whiteSpace=wrap;" parent="3O5G4UpEknz7UX0saP84-1" vertex="1">
           <mxGeometry width="101" height="57" as="geometry" />
-        </mxCell>
-        <mxCell id="o4ewJF0rdT7nwhaf_WG--1" value="&lt;div&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;Commando&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-350" y="380" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
