@@ -2378,4 +2378,12 @@
 		ai_will_do = {
 		}
 	}
+
+
+
+# MILITARY TREE !!!!!!! SAME TREE THAN OTHER POLITICAL TREES
+
+	#TBD#
+
+
 }
