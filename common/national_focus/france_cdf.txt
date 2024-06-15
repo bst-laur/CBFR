@@ -1,0 +1,2381 @@
+﻿focus_tree = {
+	id = french_psf_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 1000
+			tag = FRA
+		}
+	}
+
+	initial_show_position = {
+		x = 0
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 5000 }
+
+	focus = {
+		id = go_back_moral_order
+		icon = GFX_
+		x = 25
+		y = 3
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		#prerequisite = { focus = }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = call_croix_de_feu
+		icon = GFX_
+		x = 25
+		y = 4
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = go_back_moral_order }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = no_commie_no_nazis
+		icon = GFX_
+		x = 27
+		y = 5
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = call_croix_de_feu }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = psf_takes_power
+		icon = GFX_
+		x = 25
+		y = 6
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = call_croix_de_feu }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = french_foreign_realignment
+		icon = GFX_
+		x = 13
+		y = 7
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = psf_takes_power }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = french_master_of_continent
+		icon = GFX_
+		x = 18
+		y = 8
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = french_foreign_realignment }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = revive_versailles
+		icon = GFX_
+		x = 17
+		y = 9
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = french_master_of_continent }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = protect_belgium
+		icon = GFX_
+		x = 16
+		y = 10
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = revive_versailles }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = seize_german_business
+		icon = GFX_
+		x = 16
+		y = 11
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = protect_belgium }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = reroute_spanish_gold
+		icon = GFX_
+		x = 16
+		y = 12
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = seize_german_business }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = subsidize_peugeot
+		icon = GFX_
+		x = 19
+		y = 9
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = french_master_of_continent }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = citroen_engineering
+		icon = GFX_
+		x = 20
+		y = 10
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = subsidize_peugeot }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = renault_supervision
+		icon = GFX_
+		x = 20
+		y = 11
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = citroen_engineering }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = nationalize_french_plane_companies
+		icon = GFX_
+		x = 20
+		y = 12
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = renault_supervision }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = protect_french_brevets
+		icon = GFX_
+		x = 18
+		y = 12
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = renault_supervision }
+		prerequisite = { focus = seize_german_business }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = second_industrial_revolution
+		icon = GFX_
+		x = 18
+		y = 13
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = nationalize_french_plane_companies }
+		prerequisite = { focus = protect_french_brevets }
+		prerequisite = { focus = reroute_spanish_gold }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = french_export_focus
+		icon = GFX_
+		x = 14
+		y = 14
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = second_industrial_revolution }
+		mutually_exclusive = { focus = adopt_mercantilism }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = french_economic_miracle
+		icon = GFX_
+		x = 14
+		y = 15
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = french_export_focus }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = france_first_exporter
+		icon = GFX_
+		x = 14
+		y = 16
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = french_economic_miracle }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = adopt_mercantilism
+		icon = GFX_
+		x = 18
+		y = 14
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = second_industrial_revolution }
+		mutually_exclusive = { focus = french_export_focus }
+		mutually_exclusive = { focus = continue_free_trade }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = agricultural_power
+		icon = GFX_
+		x = 18
+		y = 15
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = adopt_mercantilism }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = revert_rural_exode
+		icon = GFX_
+		x = 18
+		y = 16
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = agricultural_power }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = continue_free_trade
+		icon = GFX_
+		x = 22
+		y = 14
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = second_industrial_revolution }
+		mutually_exclusive = { focus = adopt_mercantilism }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = latin_economic_entente
+		icon = GFX_
+		x = 22
+		y = 15
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = continue_free_trade }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = french_commercial_hegemony
+		icon = GFX_
+		x = 22
+		y = 16
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = latin_economic_entente }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = raise_import_tax
+		icon = GFX_
+		x = 20
+		y = 15
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = continue_free_trade focus = adopt_mercantilism }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = national_priority
+		icon = GFX_
+		x = 16
+		y = 15
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = french_export_focus focus = adopt_mercantilism }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = secure_la_souterraine
+		icon = GFX_
+		x = 18
+		y = 17
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = french_commercial_hegemony focus = revert_rural_exode focus = france_first_exporter }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = remove_the_usure
+		icon = GFX_
+		x = 16
+		y = 18
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = secure_la_souterraine }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = state_warranty_for_loans
+		icon = GFX_
+		x = 20
+		y = 18
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = secure_la_souterraine }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = reinforce_caisse_depots
+		icon = GFX_
+		x = 18
+		y = 18
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = secure_la_souterraine }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = end_private_banks
+		icon = GFX_
+		x = 18
+		y = 19
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = reinforce_caisse_depots }
+		prerequisite = { focus = remove_the_usure }
+		prerequisite = { focus = state_warranty_for_loans }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = business_liberty
+		icon = GFX_
+		x = 18
+		y = 20
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = end_private_banks }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+### WAR PATH (DE LA ROCQUE PATH)
+	focus = {
+		id = france_protector_of_europe
+		icon = GFX_
+		x = 8
+		y = 8
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = french_foreign_realignment }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = europe_arsenal
+		icon = GFX_
+		x = 7
+		y = 9
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = france_protector_of_europe }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = fund_our_allies
+		icon = GFX_
+		x = 7
+		y = 10
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = europe_arsenal }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = obstruct_germans
+		icon = GFX_
+		x = 7
+		y = 11
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = fund_our_allies }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = democratic_beacon
+		icon = GFX_
+		x = 9
+		y = 9
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = france_protector_of_europe }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = remove_greek_debt
+		icon = GFX_
+		x = 9
+		y = 10
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = democratic_beacon }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = block_italians
+		icon = GFX_
+		x = 9
+		y = 11
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = remove_greek_debt }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = kill_soviet_bear
+		icon = GFX_
+		x = 8
+		y = 12
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = block_italians }
+		prerequisite = { focus = obstruct_germans }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+### COLONIAL PATH (DE LA ROCQUE PATH)
+	focus = {
+		id = french_colonial_situation
+		icon = GFX_
+		x = 5
+		y = 17
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = french_foreign_realignment }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = algerian_compromise
+		icon = GFX_
+		x = 4
+		y = 18
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = french_colonial_situation }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = rethink_protectorates
+		icon = GFX_
+		x = 4
+		y = 19
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = algerian_compromise }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = battle_for_indochina
+		icon = GFX_
+		x = 6
+		y = 18
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = french_colonial_situation }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = rekindle_levantine
+		icon = GFX_
+		x = 6
+		y = 19
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = battle_for_indochina }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = paradis_france
+		icon = GFX_
+		x = 5
+		y = 20
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = rekindle_levantine }
+		prerequisite = { focus = rethink_protectorates }
+		prerequisite = { focus = french_colonial_situation }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+### POLITICAL PATH (INTERIOR DE LA ROCQUE PATH)
+	focus = {
+		id = decentralization
+		icon = GFX_
+		x = 40
+		y = 7
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = psf_takes_power }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = put_end_decadence
+		icon = GFX_
+		x = 35
+		y = 8
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = decentralization }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = revise_naturalisation
+		icon = GFX_
+		x = 40
+		y = 9
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = {focus = put_end_decadence}
+		prerequisite = {focus = saborder_parlementarism}
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = saborder_parlementarism
+		icon = GFX_
+		x = 45
+		y = 8
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = decentralization }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = organized_works
+		icon = GFX_
+		x = 34
+		y = 10
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = put_end_decadence}
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = expel_psf_antijews
+		icon = GFX_
+		x = 32
+		y = 11
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = organized_works}
+		mutually_exclusive = { focus = decredibilize_ppf }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = bring_back_fp_disappointed
+		icon = GFX_
+		x = 33
+		y = 12
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = expel_psf_antijews}
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = befriend_cspf
+		icon = GFX_
+		x = 33
+		y = 13
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = bring_back_fp_disappointed}
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = decredibilize_ppf
+		icon = GFX_
+		x = 36
+		y = 11
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = organized_works}
+		mutually_exclusive = { focus = expel_psf_antijews }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = reduce_fp_influence
+		icon = GFX_
+		x = 35
+		y = 12
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = decredibilize_ppf}
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = social_first
+		icon = GFX_
+		x = 35
+		y = 13
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = reduce_fp_influence}
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = act_serve_build
+		icon = GFX_
+		x = 34
+		y = 14
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = social_first focus = befriend_cspf }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = presidential_regime
+		icon = GFX_
+		x = 46
+		y = 10
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = saborder_parlementarism}
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = oppose_maurras
+		icon = GFX_
+		x = 44
+		y = 11
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = presidential_regime}
+		mutually_exclusive = { focus = psf_radical_alliance }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = mermoz_objective
+		icon = GFX_
+		x = 45
+		y = 12
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = oppose_maurras}
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = keep_republicain_faith
+		icon = GFX_
+		x = 45
+		y = 13
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = mermoz_objective}
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = psf_radical_alliance
+		icon = GFX_
+		x = 48
+		y = 11
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = presidential_regime}
+		mutually_exclusive = { focus = oppose_maurras }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = woman_voting_rights
+		icon = GFX_
+		x = 47
+		y = 12
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = psf_radical_alliance}
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = bring_family_voting
+		icon = GFX_
+		x = 47
+		y = 13
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = woman_voting_rights}
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = work_family_fatherland
+		icon = GFX_
+		x = 46
+		y = 14
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = bring_family_voting focus = keep_republicain_faith }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = destroy_cremieux_decree
+		icon = GFX_
+		x = 40
+		y = 11
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = revise_naturalisation}
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = arabo_french_friendship
+		icon = GFX_
+		x = 40
+		y = 12
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = destroy_cremieux_decree}
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = the_crescent_and_cross
+		icon = GFX_
+		x = 40
+		y = 14
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = arabo_french_friendship }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = first_french_party
+		icon = GFX_
+		x = 40
+		y = 16
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = the_crescent_and_cross }
+		prerequisite = { focus = act_serve_build }
+		prerequisite = { focus = work_family_fatherland }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = urgent_reforms
+		icon = GFX_
+		x = 40
+		y = 17
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = first_french_party }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = work_regulations
+		icon = GFX_
+		x = 35
+		y = 18
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = urgent_reforms }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = no_leap_nature
+		icon = GFX_
+		x = 36
+		y = 19
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = work_regulations }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = minimum_to_live
+		icon = GFX_
+		x = 36
+		y = 20
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = no_leap_nature }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = liberal_drama
+		icon = GFX_
+		x = 36
+		y = 21
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = minimum_to_live }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = marxism_threat
+		icon = GFX_
+		x = 37
+		y = 22
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = liberal_drama }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = expel_exterior_activities
+		icon = GFX_
+		x = 38
+		y = 23
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = marxism_threat }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = protect_the_family
+		icon = GFX_
+		x = 40
+		y = 18
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = urgent_reforms }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = traditions_matters
+		icon = GFX_
+		x = 40
+		y = 19
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = protect_the_family }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = instruction_publique
+		icon = GFX_
+		x = 40
+		y = 20
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = traditions_matters }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = heritage_law
+		icon = GFX_
+		x = 40
+		y = 21
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = instruction_publique }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = epargne_strenght
+		icon = GFX_
+		x = 40
+		y = 22
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = heritage_law }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = patrie_common_french_wealth
+		icon = GFX_
+		x = 45
+		y = 18
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = urgent_reforms }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = republican_parasits
+		icon = GFX_
+		x = 44
+		y = 19
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = patrie_common_french_wealth }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = mandatory_voting
+		icon = GFX_
+		x = 44
+		y = 20
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = republican_parasits }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = must_serve_france
+		icon = GFX_
+		x = 44
+		y = 21
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = mandatory_voting }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = french_way_of_life
+		icon = GFX_
+		x = 43
+		y = 22
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = must_serve_france }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+	focus = {
+		id = denounce_covenant
+		icon = GFX_
+		x = 42
+		y = 23
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = french_way_of_life }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+
+### FINAL POLITICAL FOCUS FOR PSF ###
+
+	focus = {
+		id = renaissance_nationale
+		icon = GFX_
+		x = 40
+		y = 24
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cost = 3
+		prerequisite = { focus = expel_exterior_activities }
+		prerequisite = { focus = epargne_strenght }
+		prerequisite = { focus = denounce_covenant }
+		mutually_exclusive = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+		ai_will_do = {
+		}
+	}
+}
