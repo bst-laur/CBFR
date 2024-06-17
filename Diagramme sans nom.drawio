@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-17T16:38:50.746Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0" etag="vMmcPQPHqfo15z6QCGdZ" version="24.5.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-17T16:56:39.372Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0" etag="1cQ3zXX8px44qU9z1UTB" version="24.5.4" type="github">
   <diagram name="Page 1" id="5bk7Gb2YT2sqerDLHxE1">
-    <mxGraphModel dx="4014" dy="4014" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2193" dy="3056" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1741,7 +1741,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="" tags="Arrière-plan" id="vUpqbsVSFpVNW46gnj1U-32">
-          <mxCell style="vsdxID=21;fillColor=none;gradientColor=none;strokeColor=none;spacingTop=-3;spacingBottom=-3;spacingLeft=-3;spacingRight=-3;points=[[0,0.5,0],[1,0.5,0],[0.5,1,0],[0.5,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxCell style="vsdxID=21;fillColor=#1AADFF;gradientColor=none;strokeColor=none;spacingTop=-3;spacingBottom=-3;spacingLeft=-3;spacingRight=-3;points=[[0,0.5,0],[1,0.5,0],[0.5,1,0],[0.5,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
             <mxGeometry x="3443" y="1382.77" width="101" height="50" as="geometry" />
           </mxCell>
         </UserObject>
@@ -1815,7 +1815,7 @@
           </mxGeometry>
         </mxCell>
         <UserObject label="" tags="Arrière-plan" id="vUpqbsVSFpVNW46gnj1U-52">
-          <mxCell style="vsdxID=21;fillColor=none;gradientColor=none;strokeColor=none;spacingTop=-3;spacingBottom=-3;spacingLeft=-3;spacingRight=-3;points=[[0,0.5,0],[1,0.5,0],[0.5,1,0],[0.5,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxCell style="vsdxID=21;fillColor=#1AADFF;gradientColor=none;strokeColor=none;spacingTop=-3;spacingBottom=-3;spacingLeft=-3;spacingRight=-3;points=[[0,0.5,0],[1,0.5,0],[0.5,1,0],[0.5,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
             <mxGeometry x="3790" y="1610" width="101" height="50" as="geometry" />
           </mxCell>
         </UserObject>
@@ -1837,7 +1837,7 @@
           <mxGeometry x="2.17" y="2.38" width="95.25" height="44.45" as="geometry" />
         </mxCell>
         <UserObject label="" tags="Arrière-plan" id="vUpqbsVSFpVNW46gnj1U-58">
-          <mxCell style="vsdxID=21;fillColor=none;gradientColor=none;strokeColor=none;spacingTop=-3;spacingBottom=-3;spacingLeft=-3;spacingRight=-3;points=[[0,0.5,0],[1,0.5,0],[0.5,1,0],[0.5,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxCell style="vsdxID=21;fillColor=#1AADFF;gradientColor=none;strokeColor=none;spacingTop=-3;spacingBottom=-3;spacingLeft=-3;spacingRight=-3;points=[[0,0.5,0],[1,0.5,0],[0.5,1,0],[0.5,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
             <mxGeometry x="3730" y="1510" width="101" height="50" as="geometry" />
           </mxCell>
         </UserObject>
@@ -2067,7 +2067,7 @@
           </mxGeometry>
         </mxCell>
         <UserObject label="" tags="Arrière-plan" id="dnpjEQJ_PtCxhhebOskn-34">
-          <mxCell style="vsdxID=21;fillColor=none;gradientColor=none;strokeColor=none;spacingTop=-3;spacingBottom=-3;spacingLeft=-3;spacingRight=-3;points=[[0,0.5,0],[1,0.5,0],[0.5,1,0],[0.5,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxCell style="vsdxID=21;fillColor=#1AADFF;gradientColor=none;strokeColor=none;spacingTop=-3;spacingBottom=-3;spacingLeft=-3;spacingRight=-3;points=[[0,0.5,0],[1,0.5,0],[0.5,1,0],[0.5,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
             <mxGeometry x="4322.12" y="1510" width="101" height="50" as="geometry" />
           </mxCell>
         </UserObject>
