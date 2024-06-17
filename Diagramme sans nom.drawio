@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-17T14:31:52.601Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0" etag="-Bii7a72xAXBsE8vdSFS" version="24.5.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-17T16:38:50.746Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0" etag="vMmcPQPHqfo15z6QCGdZ" version="24.5.4" type="github">
   <diagram name="Page 1" id="5bk7Gb2YT2sqerDLHxE1">
-    <mxGraphModel dx="2176" dy="4489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4014" dy="4014" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2174,7 +2174,7 @@
           <mxGeometry x="2.17" y="2.38" width="95.25" height="44.45" as="geometry" />
         </mxCell>
         <UserObject label="" tags="Arrière-plan" id="-Et0_pqFziR7FBt6n6th-17">
-          <mxCell style="vsdxID=21;fillColor=none;gradientColor=none;strokeColor=none;spacingTop=-3;spacingBottom=-3;spacingLeft=-3;spacingRight=-3;points=[[0,0.5,0],[1,0.5,0],[0.5,1,0],[0.5,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxCell style="vsdxID=21;fillColor=#1AADFF;gradientColor=none;strokeColor=none;spacingTop=-3;spacingBottom=-3;spacingLeft=-3;spacingRight=-3;points=[[0,0.5,0],[1,0.5,0],[0.5,1,0],[0.5,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
             <mxGeometry x="4135" y="1510" width="101" height="50" as="geometry" />
           </mxCell>
         </UserObject>
@@ -2300,7 +2300,7 @@
           </mxGeometry>
         </mxCell>
         <UserObject label="" tags="Arrière-plan" id="-Et0_pqFziR7FBt6n6th-60">
-          <mxCell style="vsdxID=21;fillColor=none;gradientColor=none;strokeColor=none;spacingTop=-3;spacingBottom=-3;spacingLeft=-3;spacingRight=-3;points=[[0,0.5,0],[1,0.5,0],[0.5,1,0],[0.5,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxCell style="vsdxID=21;fillColor=#1AADFF;gradientColor=none;strokeColor=none;spacingTop=-3;spacingBottom=-3;spacingLeft=-3;spacingRight=-3;points=[[0,0.5,0],[1,0.5,0],[0.5,1,0],[0.5,0,0]];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
             <mxGeometry x="4470" y="1720" width="101" height="50" as="geometry" />
           </mxCell>
         </UserObject>
