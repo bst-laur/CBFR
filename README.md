@@ -1,5 +1,5 @@
 # CBFR
-"Cold Blood : France" is an ongoing development Hearts of Iron IV mod who aims to envision a world where the antiparlementarism riots of the February, 6th of 1934 followed with the collapse of the Third French Republic.
+"Cold Blood : France" is an on hold Hearts of Iron IV mod who aims to envision a world where the antiparlementarism riots of the February, 6th of 1934 followed with the collapse of the Third French Republic.
 
 ## Development of the story : 
 *Envision a world where France's government crumbled during the tumultuous events of February 6th, 1934. 
